@@ -216,6 +216,6 @@ async def ping(ctx):
 @bot.event
 async def on_ready():
     print("Bot Online")
-    await bot.change_presence(activity = discord.Activity(type = discord.ActivityType.listening, name = "Music | !help"))
+    await bot.change_presence(activity = discord.Activity(type = discord.ActivityType.listening, name = "Monke music | mhelp"))
 
 bot.run(os.getenv("TOKEN"))
