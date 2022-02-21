@@ -206,7 +206,7 @@ class Music(commands.Cog):
             await ctx.send("Leaving Voice Channel")
             await self.vc.disconnect(force=True)
 
-bot = commands.Bot(command_prefix = "!")
+bot = commands.Bot(command_prefix = "m", case_insensitive=True)
 bot.add_cog(Music(bot))
 
 @bot.command(name = "ping", help = "Shows bot latency")
